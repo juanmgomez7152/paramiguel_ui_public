@@ -26,7 +26,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_FOR_REACTPARALARAZA_UI }}
         with:
           source-directory: 'path/to/sync/directory'
-          destination-github-username: 'destination_owner'
+          destination-github-username: 'juanmgomez7152'
           destination-repository-name: 'react-para-la-raza'
           user-email: 'sync-bot@github.com'
           user-name: 'github-actions[bot]'
