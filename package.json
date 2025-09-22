@@ -1,0 +1,51 @@
+{
+  "name": "react-para-la-raza",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.2.0",
+    "@mui/material": "^6.2.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^12.0.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-para-la-raza": "file:",
+    "react-router-dom": "^7.0.2",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "set PORT=4200 && react-scripts start",
+    "start:dev": "cross-env PORT=4200 REACT_APP_API_URL=http://127.0.0.1:3000/rest/api react-scripts start",
+    "start:prod": "cross-env PORT=4200 REACT_APP_API_URL=https://p-l-r-api-service-332949365913.us-east1.run.app/rest/api react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "cross-env": "^7.0.3"
+  }
+}
