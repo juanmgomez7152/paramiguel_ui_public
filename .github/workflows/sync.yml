@@ -21,7 +21,7 @@ jobs:
           token: ${{ secrets.API_TOKEN_FOR_REACTPARALARAZA_UI }}
 
       - name: Push to Destination Repository
-        uses: cpina/github-action-push-to-another-repository@master
+        uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_FOR_REACTPARALARAZA_UI }}
         with:
