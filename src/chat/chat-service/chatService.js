@@ -12,7 +12,7 @@ export const TranslateMessage = async (message,language,retry=false) => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data = JSON.parse(await response.json());
+        const data = await response.json();
         return data;
     } catch (error) {
         console.error("Error:", error);
@@ -88,8 +88,8 @@ export const SendPicture = async (file) => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const parsedResponse = (JSON.parse(await response.json()))['extracted_text'];
-        return parsedResponse;
+        const parsedResponse = await response.json();
+        return parsedResponse['extracted_text'];
     } catch (error) {
         console.error("Error:", error);
         throw error;
